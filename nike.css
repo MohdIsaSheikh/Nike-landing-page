@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: "gilroy";
+    background-color: #184087;
+}
+
+.overlaylft{
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    background-color: black;
+    z-index: 33;
+    overflow: hidden;
+}
+
+.overlayrgt{
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    right: 0%;
+    background-color: black;
+    z-index: 33;
+    overflow: hidden;
+}
+
+.overlaylft .logo{
+    position: absolute;
+    top: 18px;
+    right: -3.5%;
+    height: 60px;
+}
+
+.overlayrgt .logo{
+    position: absolute;
+    top: 18px;
+    left: -3.5%;
+    height: 60px;
+}
+
+.overlaylft h1{
+    position: absolute;
+    top: 50%;
+    right: -54%;
+    transform: translate(0%, -50%);
+    font-size: 400px;
+    color: white;
+}
+
+.overlayrgt h1{
+    position: absolute;
+    top: 50%;
+    left: -54.6%;
+    transform: translate(0%, -50%);
+    font-size: 400px;
+    color: white;
+}
+
+.overlay h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 5px;
+}
+
+.overlay .shoes{
+    height: 90%;
+    position: absolute;
+    bottom: -20%;
+    right: -36%;
+    transform: translate(-50%, 0%);
+}
+
+.btn{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 40px;
+    width: 120px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    z-index: 88;
+}
+
+#main{
+    background-color: black;
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    z-index: 22;
+    height: 10%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    padding-top: 20px;
+}
+
+.navcntr{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navrgt{
+    width: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navrgt .searchbox{
+    background-color: transparent;
+    border: 1px solid white;
+    height: 30px;
+    width: 250px;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.navrgt .searchbox h4{
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.navrgt i{
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+}
+
+nav h5{
+    font-size: 11px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+nav h5::after{
+    content: "";
+    width: 0%;
+    height: 1.4px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) .2s;
+}
+
+nav h5:hover::after{
+    color: white;
+    width: 100%;   
+    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) .2s;
+}
+
+nav h5:hover{
+    cursor: pointer;
+    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) .2s;
+}
+
+nav .logo{
+    height: 60px;
+}
+
+#main .sec1{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #184087;
+    background-image: linear-gradient(to right, #153b7b, #0d2754, #041433, #041535, #041535);
+    overflow: hidden;
+}
+
+.sec1 img{
+    height: 100vh;
+    margin-top: 40px;
+    transform: rotate(21deg);
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.714));
+    filter: drop-shadow(40px 20px 5px rgba(0, 0, 0, 0.714));
+    z-index: 88;
+}
+
+.sec1 .textbox1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.sec1 .textbox1 h1{
+    font-size: 270px;
+    line-height: 240px;
+    color: white;
+    border: none;
+}
+
+.sec1 .textbox1 h2{
+    font-size: 280px;
+    font-weight: 600;
+    line-height: 240px;
+    color: white;
+    border: none;
+}
+
+.sec1 .textbox1 .logo{
+    height: 500px;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.sec1 .textbox2{
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    text-align: center;
+    line-height: 50px;
+    transform: rotate(-20deg);
+}
+
+.sec1 .textbox2 h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.sec1 .textbox2 h4{
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+
+.sec1 h5{
+    position: absolute;
+    right: -11.5%;
+    top: 60%;
+    transform: translate(-50%, 0%);
+    font-size: 25px;
+    color: white;
+    font-family: "gilroy";
+    font-weight: 400;
+    transform: rotate(-90deg);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.sec1 h5 span{
+    border-top: 2px solid white;
+}
+
+.sec2{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+.sec2 video{
+    height: 100%;
+    width: 60%;
+}
+
+.sec2 .textbox1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.sec2 .textbox2{
+    position: absolute;
+    bottom: 18%;
+    left: 4%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec2 .textbox2 h5{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.sec2 h2{
+    font-size: 60px;
+    color: white;
+    margin-bottom: 18px;
+    margin-left: 50px;
+}
+
+.sec2 h1{
+    font-size: 200px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    line-height: 14vh;
+}
+
+.sec2 h1 span{
+    font-size: 200px;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+
+.sec3{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.sec3 video{
+    height: 80%;
+    width: 40%;
+    background-color: black;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 30px;
+}
+
+.sec3 .textbox{
+    height: 70%;
+    width: 46%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    margin-right: 80px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.sec3 .textbox h5{     
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: "gilroy";
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.sec3 .textbox h2{
+    font-size: 85px;
+    display: inline-block;
+    line-height: 11vh;
+}
+
+.sec3 .textbox h1{     
+    font-size: 200px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: "forresta personal use";
+    line-height: 16vh;
+    margin-top: 10px;
+}
+
+.sec3 .counterbox{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 25%;
+    text-align: center;
+}
+
+.sec3 h5{
+    font-size: 45px;
+    font-weight: 600;
+    color: black;
+}
+
+.sec3 h6{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    font-family: "gilroy";
+}
